@@ -123,10 +123,6 @@ Os pipelines podem ser executados diretamente da linha de comando com argumentos
 
 ## Executando o Pipeline
 
-### Pipeline Waze
-
-O pipeline para o Waze pode ser executado usando o comando abaixo. Você deve fornecer o intervalo de dados:
-
 ```bash
 python pipeline_waze.py --start-date 2025-03-01 --end-date 2025-03-07
 
