@@ -121,6 +121,7 @@ Os scripts `pipeline_waze.py` e `pipeline_meteorologia.py` são responsáveis po
 
 Os pipelines podem ser executados diretamente da linha de comando com argumentos de data, conforme mostrado abaixo.
 
+
 ## Executando o Pipeline
 
 ```bash
