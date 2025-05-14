@@ -4,10 +4,10 @@ Este projeto implementa um pipeline para coleta, transformação e carregamento 
 
 ## Estrutura do Projeto
 
-A estrutura do projeto é organizada da seguinte forma:
+## A estrutura do projeto é organizada da seguinte forma:
 
 
-meu_projeto/
+## meu_projeto/
 ├── notebooks/                      # Para notebooks Jupyter, se necessário
 │   ├── waze_data_analysis.ipynb    # Notebook para análise de dados do Waze
 │   ├── meteorologia_data_analysis.ipynb # Notebook para análise de dados de meteorologia
@@ -31,7 +31,8 @@ meu_projeto/
 └── tests/                          # Testes unitários
     ├── test_extract.py
     ├── test_transform.py
-    ├── test_load.py
+    ├── test_load.py 
+
 
 
 ## Requisitos
