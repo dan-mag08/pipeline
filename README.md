@@ -134,6 +134,7 @@ python pipeline_waze.py --start-date 2025-03-01 --end-date 2025-03-07
 Pipeline Meteorologia
 O pipeline para Meteorologia pode ser executado da mesma forma, fornecendo um intervalo de dados:
 
+
 python pipeline_meteorologia.py --start-date 2025-05-01 --end-date 2025-05-07
 
 
