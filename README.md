@@ -4,34 +4,59 @@ Este projeto implementa um pipeline para coleta, transformação e carregamento 
 
 ## Estrutura do Projeto
 
-## A estrutura do projeto é organizada da seguinte forma:
+A estrutura do projeto é organizada da seguinte forma:
 
 
-## meu_projeto/
-├── notebooks/                      # Para notebooks Jupyter, se necessário
-│   ├── waze_data_analysis.ipynb    # Notebook para análise de dados do Waze
-│   ├── meteorologia_data_analysis.ipynb # Notebook para análise de dados de meteorologia
-├── src/                            # Scripts Python
-│   ├── __init__.py                 # Torna a pasta 'src' um pacote Python
-│   ├── utils.py                    # Funções auxiliares
-│   ├── waze/                       # Pasta com scripts para a API Waze
+```
+meu_projeto/
+├── data/                              # Dados utilizados no projeto
+│   ├── raw/                           # Dados brutos
+│   │   ├── waze_alerts_data.csv
+│   │   ├── meteorologia_raw_data.csv
+│   ├── processed/                     # Dados processados
+│       ├── waze_alerts.parquet
+│       ├── meteorologia_estacoes.parquet
+│       ├── meteorologia_estacoes_cleaned.parquet
+│
+├── notebooks/                         # Notebooks Jupyter para análise e exploração
+│   ├── waze_data_analysis.ipynb
+│   ├── meteorologia_data_analysis.ipynb
+│
+├── pipelines/                         # Arquivos que executam os pipelines principais
+│   ├── pipeline_waze.py
+│   ├── pipeline_meteorologia.py
+│
+├── src/                               # Código-fonte principal do projeto
+│   ├── __init__.py
+│   ├── utils.py                       # Funções auxiliares reutilizáveis
+│   ├── waze/                          # Módulo da API Waze
 │   │   ├── __init__.py
-│   │   ├── extract.py              # Coleta de dados da API Waze
-│   │   ├── transform.py            # Transformação dos dados da API Waze
-│   │   ├── load.py                 # Persistência dos dados da API Waze
-│   ├── meteorologia/               # Pasta com scripts para a API Meteorologia
-│   │   ├── __init__.py
-│   │   ├── extract.py              # Coleta de dados da API Meteorologia
-│   │   ├── transform.py            # Transformação dos dados da API Meteorologia
-│   │   ├── load.py                 # Persistência dos dados da API Meteorologia
-├── pipeline_waze.py                # Pipeline principal para dados do Waze
-├── pipeline_meteorologia.py        # Pipeline principal para dados de Meteorologia
-├── requirements.txt                # Dependências do projeto
-├── README.md                       # Documentação
-└── tests/                          # Testes unitários
-    ├── test_extract.py
-    ├── test_transform.py
-    ├── test_load.py 
+│   │   ├── extract.py
+│   │   ├── transform.py
+│   │   ├── load.py
+│   │   ├── utils.py
+│   ├── meteorologia/                 # Módulo da API Meteorologia
+│       ├── __init__.py
+│       ├── extract.py
+│       ├── transform.py
+│       ├── load.py
+│       ├── utils.py
+│
+├── tests/                             # Testes automatizados
+│   ├── tests_unicidade_waze/
+│   │   ├── test_extract.py
+│   │   ├── test_transform.py
+│   │   ├── test_load.py
+│   ├── tests_unicidade_meteorologia/
+│       ├── test_extract.py
+│       ├── test_transform.py
+│       ├── test_load.py
+│
+├── venv/                              # Ambiente virtual Python 
+├── requirements.txt                   # Dependências do projeto
+└── README.md                          # Documentação do projeto
+```
+
 
 
 
